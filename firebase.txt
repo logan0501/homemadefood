@@ -1,0 +1,64 @@
+import React,{useEffect,useState} from "react";
+import firebase from "./firebase";
+
+function App() {
+  
+  var ref = firebase.firestore().collection("users");
+  //autoid
+  // firebase.firestore().collection("chats").add({
+  //   name:"logan"
+  // }).then((res)=>{
+  //   console.log(res);
+  // })
+  
+  //doc
+  // firebase.firestore().collection("chats").doc("school").set({
+
+  // })
+
+
+  // //read 
+  // firebase.firestore().collection("chats").doc()
+  // .get().then((res)=>{
+
+  // })
+  const [datas,setdata]=useState([]);
+  useEffect(()=>{
+    ref.onSnapshot((snapshot)=>{
+      var d=[]; 
+      snapshot.forEach((data)=>{
+        var id = data.id;
+        var name = data.data().name;
+        d.push(data.data().name);
+        console.log(name);
+       
+        
+      })
+    })
+  },[])
+
+  return (
+    
+<div>
+  {datas.map((item)=>{
+    return <p>{item}</p>
+  })}
+<button onClick={()=>{
+      
+      ref.add({
+        name:"logan",
+        id:1,
+
+      })
+      .then((res)=>{
+        console.log(res.id);
+        console.log("added");
+                })
+  }}>click</button>
+</div>
+  
+   
+ 
+  );}
+
+export default App;

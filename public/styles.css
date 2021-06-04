@@ -1,0 +1,170 @@
+/* home page */
+*{
+     font-family: 'Ubuntu', sans-serif;
+   
+}
+.heading{
+    font-family: 'Zen Dots', cursive;
+}
+.navbar{
+    background-color: #0061a8;
+    color:#8ab6d6;
+    
+   
+}
+.orderheading{
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+    padding: 1%;
+    color:white;
+}
+.bodytag{
+    background: url("image.jpg") no-repeat center center fixed;
+    background-size: cover;
+   overflow: hidden;
+   min-height: 900px;
+}
+.mycards{
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.mycard{
+    margin: 10px;
+    width:15rem;
+}
+.fbtn {
+    margin: 0px;
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    position: fixed;
+    background-color: #0061a8;
+    border-radius: 10rem;
+ }
+
+ /* add page */
+
+.addform{
+
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+.myform{
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: start;
+}
+
+/* login page*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.loginheading{
+    background-color: #132c33;
+    font-family: 'Zen Dots', cursive;
+    color:#d8e3e7;
+    text-align: center;
+    padding: 10px;
+}
+.loginheading span{
+    color: #ffffff;
+}
+.container{
+    position: relative;
+  text-align: center;
+  color: white;
+}
+.logininputform{
+    margin-top: 10%;
+    background-color: white;
+    padding: 30px;
+   
+    display: flex;
+    flex-direction: column;
+    
+    position: absolute;
+ top: 30px;
+ left:35%;
+
+}
+.logincard{
+    box-shadow: #132c33;
+}
+
+.imgsvg{
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.imgsvg img{
+    width: 70%;
+    height: 100%;
+}
+
+.logininputform a{
+color:#132c33
+}
+.btn{
+    margin: 15px;
+    padding: 7px 15px;
+}
+.crtebtn{
+    border: none;
+    background-color: transparent;
+}
+@media screen and (min-width:321px) and (max-width:768px)
+{
+    .imgsvg {
+      margin-top: 10%;
+      width: 100%;
+    }
+    .logininputform{
+      
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border: 0;
+        top: 0%;
+        left:0%;
+        width: 100%;
+        align-items: center;
+       }
+  }
+  
+/* menu page */
+
+.mymenuitem{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menuitem{
+  
+}
